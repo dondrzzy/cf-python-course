@@ -11,8 +11,8 @@ def calc_difficulty(recipe):
         difficulty = "Medium"
     elif recipe["cooking_time"] >= 10 and len(recipe["ingredients"]) < 4:
         difficulty = "Intermediate"
-    elif recipe["cooking_time"] > 10 and len(recipe["ingredients"] > 4):
-        difficulty = "Intermediate"
+    elif recipe["cooking_time"] >= 10 and len(recipe["ingredients"] >= 4):
+        difficulty = "Hard"
     return difficulty
 
 def take_recipe():

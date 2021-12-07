@@ -14,8 +14,8 @@ class Recipe(object):
             difficulty = "Medium"
         elif self.cooking_time >= 10 and len(self.ingredients) < 4:
             difficulty = "Intermediate"
-        elif self.cooking_time > 10 and len(self.ingredients) > 4:
-            difficulty = "Intermediate"
+        elif self.cooking_time >= 10 and len(self.ingredients) >= 4:
+            difficulty = "Hard"
         return difficulty
 
     def get_name(self):
